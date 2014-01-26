@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" >
+	<Title>WebPart1</Title>
+	<Description>WebPart1</Description>
+	<Assembly>$safeprojectname$, Version=1.0.0.0, Culture=neutral, PublicKeyToken=59f65f1d819b0851</Assembly>
+	<TypeName>$safeprojectname$.WebPart1</TypeName>
+	<!-- Specify initial values for any additional base class or custom properties here. -->
+</WebPart>

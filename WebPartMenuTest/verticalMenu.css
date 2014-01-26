@@ -1,0 +1,30 @@
+﻿div#WPQ3Nav ul
+{
+	float:left;
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	border:solid 1px black;
+	color:Black;
+}
+
+div#WPQ3Nav li 
+{
+	position:relative;
+	background-color:#dcdcdc;
+	border:solid 1px black;
+	color:Black;
+	margin:0px;
+	padding:2px;
+	cursor:pointer;
+}
+
+div#WPQ3Nav li ul 
+{
+	display:none;
+	position:absolute;
+	border:solid 1px black;
+	color:Black;
+	margin:0px;
+	padding:0px;
+}

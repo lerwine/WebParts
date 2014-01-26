@@ -1,0 +1,100 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E12B9C66-098C-4A1A-9605-64B0F7B3E8F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GdWebPart</RootNamespace>
+    <AssemblyName>GdWebPart</AssemblyName>
+    <ApplicationIcon>WebPart.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>GdWebPart.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Template_original\WebPart1.cs" />
+    <None Include="Template\GdToolPart.cs" />
+    <None Include="Template\GdWebPart.cs" />
+    <None Include="Template\Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInputForm.Designer.cs">
+      <DependentUpon>UserInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebPartSetup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserInputForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GdWebPart.pfx" />
+    <None Include="Template\Key.snk" />
+    <None Include="Template_original\Key.snk" />
+    <None Include="Template_original\Manifest.xml" />
+    <None Include="Template_original\MyTemplate.vstemplate" />
+    <None Include="Template_original\Properties\AssemblyInfo.cs" />
+    <None Include="Template_original\WebPart1.dwp" />
+    <None Include="Template_original\__TemplateIcon.ico" />
+    <None Include="Template\GdWebPart.ddf" />
+    <None Include="Template\GdWebPart.dwp" />
+    <None Include="Template\GdWebPartR.ddf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+    <None Include="Template_original\SharePointLibraries\Microsoft.SharePoint.dll" />
+    <None Include="Template_original\WebPartTemplate.csproj" />
+    <None Include="Template\Dll\Microsoft.SharePoint.dll" />
+    <None Include="Template\Embedded.js" />
+    <None Include="Template\GdWebPart.csproj" />
+    <None Include="Template\Manifest.xml" />
+    <None Include="Template\MyTemplate.vstemplate" />
+    <None Include="Template\Readme.txt" />
+    <None Include="Template\ResourceImage.gif" />
+    <None Include="Template\__TemplateIcon.ico" />
+    <Content Include="WebPart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

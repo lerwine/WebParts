@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" >
+	<Title>Hierarchal Menu System</Title>
+  <Description>Heirarchal Menu Web Part by Leonard T. Erwine, General Dynamics IT</Description>
+  <Assembly>MenuTree</Assembly>
+	<TypeName>MenuTree.MenuTree</TypeName>
+	<!-- Specify initial values for any additional base class or custom properties here. -->
+</WebPart>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<!-- You need only one manifest per CAB project for Web Part Deployment.-->
+<!-- This manifest file can have multiple assembly nodes.-->
+<WebPartManifest xmlns="http://schemas.microsoft.com/WebPart/v2/Manifest">
+    <Assemblies>
+        <Assembly FileName="MenuTree.dll">
+            <SafeControls>
+                <SafeControl
+                  Namespace="MenuTree"
+                  TypeName="*"
+        />
+            </SafeControls>
+        </Assembly>
+    </Assemblies>
+    <DwpFiles>
+        <DwpFile FileName="MenuTree.dwp"/>
+    </DwpFiles>
+</WebPartManifest>

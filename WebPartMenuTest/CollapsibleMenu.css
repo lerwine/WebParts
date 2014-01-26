@@ -1,0 +1,26 @@
+﻿div#WPQ3Nav ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+div#WPQ3Nav li 
+{
+	padding:0px;
+	margin:0px;
+}
+
+div#WPQ3Nav li ul 
+{
+	display:none;
+	margin:0px 0px 0px 24px;
+}
+
+div#WPQ3Nav img.ExpandImage 
+{
+	border:none;
+	cursor:pointer;
+	margin:0px 4px 0px 0px;
+	padding:0px;
+}

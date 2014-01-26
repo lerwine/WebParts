@@ -1,0 +1,11 @@
+.OPTION EXPLICIT
+.Set CabinetNameTemplate=$safeprojectname$.cab       
+.set DiskDirectoryTemplate=CDROM
+.Set CompressionType=MSZIP
+.Set UniqueFiles="OFF"
+.Set Cabinet=on
+.Set DiskDirectory1="$destinationdirectory$"
+"$destinationdirectory$\bin\FX1_1\Release\$safeprojectname$.dll"
+"$destinationdirectory$\Manifest.xml"
+"$destinationdirectory$\$safeprojectname$.dwp"
+"$destinationdirectory$\ResourceImage.gif"

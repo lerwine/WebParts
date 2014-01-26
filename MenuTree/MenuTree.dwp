@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" >
+	<Title>Menu Tree</Title>
+  <Description>Hierarchal Menu Tree which can be customized</Description>
+  <Assembly>MenuTree</Assembly>
+	<TypeName>MenuTree.MenuTree</TypeName>
+	<!-- Specify initial values for any additional base class or custom properties here. -->
+</WebPart>

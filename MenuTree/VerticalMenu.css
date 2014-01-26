@@ -1,0 +1,35 @@
+div#_WPQ_Nav ul
+{
+	float:left;
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	color:Black;
+	background-color:Silver;
+}
+
+div#_WPQ_Nav li 
+{
+	position:relative;
+	background-color:Silver;
+	border:outset 2px Silver;
+	color:Black;
+	margin:0px;
+	padding:2px;
+	cursor:pointer;
+}
+
+div#_WPQ_Nav li ul 
+{
+	display:none;
+	position:absolute;
+	border-bottom:solid 1px Gray;
+	color:Black;
+	margin:0px;
+	padding:0px;
+}
+
+div#_WPQ_Nav li ul li 
+{
+	border:solid 1px Black;
+}

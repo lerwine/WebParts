@@ -1,0 +1,29 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>SharePoint 2003 Webpart Template</Name>
+    <Description>Build SharePoint WebParts with Visual Studio 2005, you need install Net framework 1.1 SDK and MSBee (Solution for MSBuild to build projects targeting .NET framework 1.1) see www.ideseg.com for more info</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>SharePoint</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WebPartTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="WebPartTemplate.csproj" File="WebPartTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="Key.snk">Key.snk</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Manifest.xml">Manifest.xml</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="SharePointLibraries" TargetFolderName="SharePointLibraries">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Microsoft.SharePoint.dll">Microsoft.SharePoint.dll</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WebPart1.cs">WebPart1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WebPart1.dwp">WebPart1.dwp</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,30 @@
+div#_WPQ_Nav ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+div#_WPQ_Nav li 
+{
+	float:left;
+	position:relative;
+	margin:0px;
+	padding:2px;
+	cursor:pointer;
+}
+
+div#_WPQ_Nav li ul 
+{
+	display:none;
+	position:absolute;
+	margin:0px;
+	padding:0px;
+}
+
+div#_WPQ_Nav li ul li 
+{
+    float:none;
+	border-left:none;
+	border-right:none;
+}

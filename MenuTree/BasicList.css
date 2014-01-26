@@ -1,0 +1,14 @@
+div#_WPQ_MenuRoot ul._WPQ_Nav 
+{
+    list-style-type:none;
+    margin-right:0px;
+    margin-left:0px;
+    font-weight:bold;
+}
+
+div#_WPQ_MenuRoot ul._WPQ_Nav ul
+{
+    margin-left:8px;
+    margin-right:0px;
+    font-weight:normal;
+}

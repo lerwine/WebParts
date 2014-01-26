@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<WebPartManifest xmlns="http://schemas.microsoft.com/WebPart/v2/Manifest">
+  <Assemblies>
+    <Assembly FileName="$safeprojectname$.dll">
+      <ClassResources>
+        <ClassResource FileName="ResourceImage.gif"/>
+      </ClassResources>
+      <SafeControls>
+        <SafeControl
+          Namespace="$safeprojectname$"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <DwpFiles>
+    <DwpFile FileName="$safeprojectname$.dwp"/>
+  </DwpFiles>
+</WebPartManifest>

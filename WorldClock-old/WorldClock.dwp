@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" >
+	<Title>World Clock</Title>
+  <Description>Customizable World Clock</Description>
+  <Assembly>WorldClock</Assembly>
+	<TypeName>WorldClock.WorldClock</TypeName>
+	<!-- Specify initial values for any additional base class or custom properties here. -->
+</WebPart>

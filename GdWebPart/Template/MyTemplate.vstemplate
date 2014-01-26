@@ -1,0 +1,39 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>SharePoint 2003 Webpart Template (GD)</Name>
+    <Description>Build SharePoint WebParts with Visual Studio 2005, Provided by General Dynamics IT</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>SharePoint</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GdWebPart</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="GdWebPart.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Dll" TargetFolderName="Dll">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Microsoft.SharePoint.dll">Microsoft.SharePoint.dll</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Key.snk">Key.snk</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Embedded.js">Embedded.js</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$commonprefix$ToolPart.cs">GdToolPart.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$commonprefix$WebPart.cs">GdWebPart.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.ddf">GdWebPart.ddf</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$R.ddf">GdWebPartR.ddf</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.dwp">GdWebPart.dwp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Manifest.xml">Manifest.xml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Readme.txt">Readme.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ResourceImage.gif">ResourceImage.gif</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>GdWebPart, Version=1.2.0.0, Culture=neutral, PublicKeyToken=9188ae31253650ee</Assembly>
+    <FullClassName>GdWebPart.WebPartSetup</FullClassName>
+  </WizardExtension>
+</VSTemplate>
